@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Tantum Projects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container nav{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            border: 2px solid rgb(154, 147, 147);
+            height: 80px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        #logoBlock{
+            height: 80px;
+            position: relative;
+        }
+        #logoBlock h2{
+            font-size: 20px;
+            color:rgb(38, 218, 206) ;
+            display:inline-block;
+        }
+
+        #logoBlock span{
+            background-color: rgb(38, 218, 206);
+            color: white;
+            font-size: 50px;
+            width: 100px;
+            height:inherit;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+        }
+        /* #menuBlock{
+           position:relative;
+        } */
+        #menuBlock ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+        }
+        #menuBlock ul li{
+            margin-left: 10px;
+            list-style: none;
+           
+        }
+        #menuBlock li a{
+            font-size: 18px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+
+        }
+     
+        .Header-container{
+            width: 82%;
+            background-color:blueviolet;
+            height: 300px;
+            margin-left:158px;
+            position: relative;
+        }
+        
+        .Header-container img{
+            position: absolute;
+            top: 100px;
+            left: -100px;
+            height: 300px;
+            width:90%;
+        }
+        #image-text{
+            position: absolute;
+            top: 150px;
+            background-color: white;
+            width: 300px;
+            height:250px ;
+            right: 0;
+        }
+        #image-text h1{
+            padding: 20px;
+            font-size: 25px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:rgb(38, 218, 206) ;
+            /* letter-spacing: 3px; */
+        }
+        #dropDown{
+            left:150px;
+            top: 50px;
+
+        }
+        #menuBlock span{
+            margin-right: 20px;
+        }
+        @media screen and (max-width:800px) {
+           
+            #logoBlock h2{
+                display: none;
+            }
+            #menuBlock ul{
+                display: none;
+            }
+
+        #menuBlock:hover #dropDown {
+                 display: block;
+                 position: absolute;
+                 z-index: 999;
+                 width: 70%;
+            }
+
+        #menuBlock:hover #dropDown li{
+            margin: 10px;
+            border: 2px solid black;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+            background-color:whitesmoke;
+
+
+        }
+        .Header-container{
+            width: auto;
+            height: 300px;
+            margin-left:130px;
+            position: relative;
+        }
+        }
+        @media screen and (min-width:801px) and (max-width:1200px) {
+            #menuBlock span{
+            display: none;
+        }
+          #menuBlock li a{
+            font-size: 13px;
+        }
+
+         #logoBlock h2{
+            font-size: 13px;
+         }
+     
+        }
+        @media screen and (min-width:1200px) and (max-width:1800px) {
+            #menuBlock span{
+            display: none;
+        }
+        #menuBlock li a{
+            font-size: 18px;
+        }
+     
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="logoBlock"><span>T</span> <h2>TANTUAM PROJECTS</h2></div>
+            <div id="menuBlock">
+                <span>X</span>
+                <ul id="dropDown">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">WHAT WE DO</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="Header-container">
+                <img src="./Image.jpg" alt="">
+                <div id="image-text">
+                    <h1>Throw Your First Boomerang Today, and Preapare to Catch the Profits</h1>
+                </div>
+    
+        </div>
+        
+    </div>
+
+</body>
+</html>
